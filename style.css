@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron:400,700,900");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: black;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.message {
+  display: flex;
+}
+
+p {
+  display: flex;
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  text-transform: uppercase;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 900;
+  color: #121212;
+  -webkit-text-stroke: 3px dimgray;
+  transition: 2s;
+}
+
+p:nth-child(1) {
+  -webkit-order: 10;
+}
+
+p:nth-child(2) {
+  -webkit-order: 8;
+}
+
+p:nth-child(3) {
+  -webkit-order: 3;
+}
+
+p:nth-child(4) {
+  -webkit-order: 2;
+}
+
+p:nth-child(5) {
+  -webkit-order: 7;
+}
+
+p:nth-child(6) {
+  -webkit-order: 12;
+}
+
+p:nth-child(7) {
+  -webkit-order: 6;
+}
+
+p:nth-child(8) {
+  -webkit-order: 11;
+}
+
+p:nth-child(9) {
+  -webkit-order: 4;
+}
+
+p:nth-child(10) {
+  -webkit-order: 5;
+}
+
+p:nth-child(11) {
+  -webkit-order: 1;
+}
+
+p:nth-child(12) {
+  -webkit-order: 9;
+}
+
+.message:hover p:nth-child(1) {
+  animation: reorder 4s linear forwards 1.5s;
+}
+@keyframes reorder {
+  to {
+    -webkit-order: 1;
+  }
+}
+.message:hover p:nth-child(2) {
+  animation: reorder 4s linear forwards 1.5s;
+}
+@keyframes reorder {
+  to {
+    -webkit-order: 2;
+  }
+}
+.message:hover p:nth-child(3) {
+  animation: reorder 4s linear forwards 1.5s;
+}
+@keyframes reorder {
+  to {
+    -webkit-order: 3;
+  }
+}
+.message:hover p:nth-child(4) {
+  animation: reorder 4s linear forwards 1.5s;
+}
+@keyframes reorder {
+  to {
+    -webkit-order: 4;
+  }
+}
+.message:hover p:nth-child(5) {
+  animation: reorder 4s linear forwards 1.5s;
+}
+@keyframes reorder {
+  to {
+    -webkit-order: 5;
+  }
+}
+.message:hover p:nth-child(6) {
+  animation: reorder 4s linear forwards 1.5s;
+}
+@keyframes reorder {
+  to {
+    -webkit-order: 6;
+  }
+}
+.message:hover p:nth-child(7) {
+  animation: reorder 4s linear forwards 1.5s;
+}
+@keyframes reorder {
+  to {
+    -webkit-order: 7;
+  }
+}
+.message:hover p:nth-child(8) {
+  animation: reorder 4s linear forwards 1.5s;
+}
+@keyframes reorder {
+  to {
+    -webkit-order: 8;
+  }
+}
+.message:hover p:nth-child(9) {
+  animation: reorder 4s linear forwards 1.5s;
+}
+@keyframes reorder {
+  to {
+    -webkit-order: 9;
+  }
+}
+.message:hover p:nth-child(10) {
+  animation: reorder 4s linear forwards 1.5s;
+}
+@keyframes reorder {
+  to {
+    -webkit-order: 10;
+  }
+}
+.message:hover p:nth-child(11) {
+  animation: reorder 4s linear forwards 1.5s;
+}
+@keyframes reorder {
+  to {
+    -webkit-order: 11;
+  }
+}
+.message:hover p:nth-child(12) {
+  animation: reorder 4s linear forwards 1.5s;
+}
+@keyframes reorder {
+  to {
+    -webkit-order: 12;
+  }
+}
+
+.message:hover p:nth-child(-n+6) {
+  color: pink;
+  text-shadow: 0 0 3px white, 0 0 7px red, 0 0 20px red;
+  filter: drop-shadow(0 0 25px red);
+  -webkit-text-stroke: 3px red;
+}
+
+.message:hover p:nth-child(+n+7):nth-child(-n+9) {
+  color: skyblue;
+  text-shadow: 0 0 3px white, 0 0 7px blue, 0 0 20px blue;
+  filter: drop-shadow(0 0 25px blue);
+  -webkit-text-stroke: 3px blue;
+}
+
+.message:hover p:nth-child(n+10) {
+  color: lightgreen;
+  text-shadow: 0 0 3px white, 0 0 7px lime, 0 0 20px green;
+  filter: drop-shadow(0 0 25px lime);
+  -webkit-text-stroke: 3px green;
+}
